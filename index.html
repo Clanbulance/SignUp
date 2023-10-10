@@ -8,6 +8,43 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="leftside"></div>
+        <div class="rightside">
+            <div class="infoBox">
+                <p>
+                Welcome to Waterify!<br><br> This app will provide you with a reminder when to water your beloved plants!
+            <br><br>Sign up  below!
+            </p>
+        </div>
+        <div class="signupform">
+            <fieldset>
+                <form action="#" method="get">
+                    <div class="leftForm">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="mail">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="password" id="pwd">
+                </div>
+                <div class="rightForm">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phonenumber" id="phone" pattern="0-9">
+                    <label for="confirmpwd">Confirm password</label>
+                    <input type="password" name="confirmpassword" id="confirmpwd">
+                </div>
+                </form>
+                <button type="submit">Create Account</button>
+            </fieldset>
+            
+            <div class="signIn">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

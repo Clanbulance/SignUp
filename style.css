@@ -1,0 +1,101 @@
+.html, * {
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height: 100vh;
+}
+
+.leftside{
+    width:39%;
+    background-image: url(plants.jpg);
+    background-size:cover;
+    height: 100%;
+}
+
+.rightside{
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    width: 61%;
+    flex-direction: column;
+    
+}
+
+.infoBox{
+    width: 100%;
+    display: flex;
+    height: 40%;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.infoBox p {
+    margin-left: 8%;
+    margin-right: 15%;
+    font-weight: bold;
+}
+
+fieldset{
+    border:none;
+    background-color: rgb(255, 255, 255);
+
+}
+form{
+    display: flex;
+    padding-left: 8%;
+}
+
+.leftForm{
+    width:40%
+}
+
+label,input{
+    display:flex;
+    flex-direction:column;
+    margin-top: 3px;
+    
+  }
+
+  button{
+    margin-left: 9%;
+    margin-top: 4%;
+    background-color: rgb(38, 99, 38);
+    border-radius: 9px;
+    padding:12px;
+    border:none;
+    color:white;
+    font-weight: bold;
+    box-shadow: 1cm;
+  }
+
+input{
+    border:2px solid rgb(238, 232, 232);
+    border-radius: 4px;
+    
+}
+
+
+
+
+
+
+
+.signIn{
+    margin-left: 9%;
+    margin-top: 4%;
+}
+  a{
+    text-decoration: none;
+  }
+
+
+  input:invalid{
+    border:rgb(0, 255, 0);
+  }
+
+  input:invalid{
+    border:red;
+  }
