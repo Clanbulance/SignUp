@@ -6,7 +6,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -22,28 +22,28 @@
         </div>
         <div class="signupform">
             <fieldset>
-                <form action="#" method="get">
+                <form action="#" method="get" onsubmit="redirect()">
                     <div class="leftForm">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName"  >
                     <label for="mail">Email</label>
-                    <input type="email" name="email" id="mail">
+                    <input type="email" name="email" id="mail" >
                     <label for="pwd">Password</label>
-                    <input type="password" name="password" id="pwd">
+                    <input type="password" name="password" id="pwd" onchange="pwdChecker()">
                 </div>
                 <div class="rightForm">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" name="lastName">
                     <label for="phone">Phone Number</label>
-                    <input type="text" name="phonenumber" id="phone" pattern="0-9">
+                    <input type="number" name="phonenumber" id="phone" pattern="0-9">
                     <label for="confirmpwd">Confirm password</label>
-                    <input type="password" name="confirmpassword" id="confirmpwd">
+                    <input type="password" name="confirmpassword" id="confirmpwd" onchange="pwdChecker()">
+                    
                 </div>
-                </form>
-                
             </fieldset>
-            <button type="submit">Create Account</button>
-            </div>
+            <div><button type="submit" class="submitButton" >Create Account</button></div>
+            <div class="errorMessage"></div>
+             </form></div>
             <div class="signIn">
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
